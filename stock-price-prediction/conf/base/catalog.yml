@@ -2,3 +2,17 @@
 #
 # Documentation for this file format can be found in "The Data Catalog"
 # Link: https://kedro.readthedocs.io/en/stable/data/data_catalog.html
+
+#train data 
+train_data:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/train.csv
+  layer: raw
+  #load_args:
+    #sep: '/t'
+
+#new data to predict on
+new_data:
+  type: pandas.CSVDataSet
+  layer: raw
+  filepath: data/01_raw/test.csv
