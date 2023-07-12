@@ -1,6 +1,10 @@
 ARG BASE_IMAGE=python:3.9-slim
 FROM $BASE_IMAGE as runtime-environment
 
+
+# install java
+RUN apt-get update && apt-get install -y git
+ENV JAVA_HOME "/usr/lib/jvm/default-java"
 # install project requirements
 COPY src/requirements.txt /tmp/requirements.txt
 RUN pip install --no-cache -r /tmp/requirements.txt && rm -f /tmp/requirements.txt
@@ -24,3 +28,5 @@ COPY --chown=${KEDRO_UID}:${KEDRO_GID} . .
 EXPOSE 8888
 
 CMD ["kedro", "run"]
+
+
