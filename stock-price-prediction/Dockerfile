@@ -1,5 +1,10 @@
-ARG BASE_IMAGE=python:3.9-slim
-FROM $BASE_IMAGE as runtime-environment
+ARG BASE_IMAGE=python:3.8-buster
+FROM $BASE_IMAGE
+
+
+# install java and git
+RUN apt-get update && apt-get install -y git
+ENV JAVA_HOME "/usr/lib/jvm/default-java"
 
 
 # install java
@@ -18,14 +23,14 @@ useradd -m -d /home/kedro_docker -s /bin/bash -g ${KEDRO_GID} -u ${KEDRO_UID} ke
 WORKDIR /home/kedro_docker
 USER kedro_docker
 
-FROM runtime-environment
-
 # copy the whole project except what is in .dockerignore
 ARG KEDRO_UID=999
 ARG KEDRO_GID=0
-COPY --chown=${KEDRO_UID}:${KEDRO_GID} . .
+COPY . .
 
 EXPOSE 8888
+EXPOSE 8501
+EXPOSE 4141
 
 CMD ["kedro", "run"]
 
