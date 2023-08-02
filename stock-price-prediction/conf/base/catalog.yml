@@ -11,8 +11,21 @@ train_data:
   #load_args:
     #sep: '/t'
 
+#cleaned training data
+cleaned_train_data:
+  type: pandas.CSVDataSet
+  filepath: data/02_intermediate/cleaned_train_data.csv
+  layer: raw
+  #load_args:
+    #sep: '/t'
+
 #new data to predict on
 new_data:
   type: pandas.CSVDataSet
   layer: raw
   filepath: data/01_raw/test.csv
+
+cleaned_new_data:
+  type: pandas.CSVDataSet
+  layer: intermediate
+  filepath: data/02_intermediate/cleaned_new_data.csv
