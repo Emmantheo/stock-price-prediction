@@ -26,7 +26,7 @@ def create_pipeline(**kwargs) -> Pipeline:
             node(
                 func=evaluate_model,
                 inputs=["reg_model", "X_test", "y_test"],
-                outputs=None,
+                outputs='metrics',
                 name="evaluate_model_node",
             ),
             node(
@@ -47,6 +47,6 @@ def create_pipeline(**kwargs) -> Pipeline:
         pipe=pipeline_instance,
         inputs=["cleaned_train_data","cleaned_new_data"],
         namespace = "data_science",
-        outputs = 'predictions'
+        outputs = ['predictions', 'metrics']
     )
     return data_science
