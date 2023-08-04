@@ -15,9 +15,9 @@ def feature_engineering(df) -> pd.DataFrame:
     df['Date'] = pd.to_datetime(df['Date'])
     df.insert(3,'Month',df.Date.dt.month)
     df.insert(2,'Year',df.Date.dt.year)
-    df.insert(4,'Day',df.Date.dt.day)
-    df['quarter'] = df['Date'].dt.quarter
+    #df.insert(4,'Day',df.Date.dt.day)
+    #df['quarter'] = df['Date'].dt.quarter
     # Calculate the difference between "high" and "low" columns
     #df["price_spread"] = df["High"] - df["Low"]
-    drop_df = df.drop(['Date','Close', 'Volume', 'Stock Trading'], axis=1)
+    drop_df = df.drop(['Date', 'Volume', 'Stock Trading'], axis=1)
     return drop_df
