@@ -45,3 +45,12 @@ predictions:
   #filepath: data/02_intermediate/clean_tweet_data.csv
   layer: model_output
   filepath: data/07_model_output/predictions.csv
+
+#######################
+#  Metrics             #
+#######################
+
+metrics:
+  type: tracking.MetricsDataSet
+  layer: tracking
+  filepath: data/09_tracking/metrics.json
