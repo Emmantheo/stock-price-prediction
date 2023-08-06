@@ -30,6 +30,7 @@ Long Short-Term Memory (LSTM): A recurrent neural network (RNN) architecture com
 
 ## Result
 The following image shows how the predicted price compares to the real price. The image shows the model was able to predict the prices closely to the actual real prices.
+
 <img width="655" alt="result_stock" src="https://github.com/Emmantheo/stock-price-prediction/assets/89465917/6330edc4-185d-4b05-bc17-d3670ec254bd">
 
 ## Usage
