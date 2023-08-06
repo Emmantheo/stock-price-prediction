@@ -32,7 +32,7 @@ def split_data(df: pd.DataFrame, parameters: Dict) -> List:
     y = df['Close'].values
     X = df.drop('Close', axis=1)
     
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.05, 
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.15, 
                                                         random_state=42)
     return [X_train, X_test, y_train, y_test]
 
@@ -112,7 +112,7 @@ def get_predictions(reg_model, new_data: pd.DataFrame, new: np.ndarray) -> List:
 
     # Add the predictions as a new column to the new_data DataFrame
     new_data["predicted_target"] = predictions
-    print(new_data.head(6))
+    print(new_data.head(7))
 
     return new_data
 
