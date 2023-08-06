@@ -1,6 +1,6 @@
-artifact_location: mlflow-artifacts:/0
-creation_time: 1691145493484
+artifact_location: file:///C:/Users/emmau/Downloads/stock-price-prediction/stock-price-prediction/mlruns/0
+creation_time: 1691174995182
 experiment_id: '0'
-last_update_time: 1691145493484
+last_update_time: 1691174995182
 lifecycle_stage: active
 name: Default
