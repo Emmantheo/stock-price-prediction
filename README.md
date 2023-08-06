@@ -7,10 +7,11 @@ This project aims to predict stock prices of a single company, Uniqlo listed in 
   2. [Data](#data)
   
   3. [Models](#models)
-  
-  4. [Usage](#usage)
-  5. [Contributing](#contributing)
-  6. [License](#license)
+  4. [Result](#results)
+  5. [Usage](#usage)
+  6. [Contributing](#contributing)
+  7. [License](#license)
+
 
 ## Introduction
 Stock price prediction plays a crucial role in financial analysis and decision-making. This project focuses specifically on predicting stock prices for Uniqluo in the Japanese market. By leveraging historical data and advanced machine learning techniques, I aim to develop accurate models that can forecast future stock prices.
@@ -26,6 +27,10 @@ Linear Regression: A basic regression model that establishes a linear relationsh
 Random Forest: A powerful ensemble learning method that combines multiple decision trees to generate predictions.
 
 Long Short-Term Memory (LSTM): A recurrent neural network (RNN) architecture commonly used for sequential data analysis, such as time series data.
+
+## Result
+The following image shows how the predicted price compares to the real price. The image shows the model was able to predict the prices closely to the actual real prices.
+<img width="655" alt="result_stock" src="https://github.com/Emmantheo/stock-price-prediction/assets/89465917/6330edc4-185d-4b05-bc17-d3670ec254bd">
 
 ## Usage
 To use this project, follow these steps:
