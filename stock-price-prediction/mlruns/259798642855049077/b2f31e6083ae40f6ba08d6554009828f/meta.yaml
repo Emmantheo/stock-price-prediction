@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/emmau/Downloads/stock-price-prediction/stock-price-prediction/mlruns/259798642855049077/b2f31e6083ae40f6ba08d6554009828f/artifacts
+end_time: 1691326872823
+entry_point_name: ''
+experiment_id: '259798642855049077'
+lifecycle_stage: active
+run_id: b2f31e6083ae40f6ba08d6554009828f
+run_name: __default__
+run_uuid: b2f31e6083ae40f6ba08d6554009828f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1691326827685
+status: 3
+tags: []
+user_id: emmau

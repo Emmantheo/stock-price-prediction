@@ -20,4 +20,5 @@ def feature_engineering(df) -> pd.DataFrame:
     # Calculate the difference between "high" and "low" columns
     #df["price_spread"] = df["High"] - df["Low"]
     drop_df = df.drop(['Date', 'Volume', 'Stock Trading'], axis=1)
+    
     return drop_df
