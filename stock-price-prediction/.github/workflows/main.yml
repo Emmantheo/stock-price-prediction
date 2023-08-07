@@ -3,7 +3,7 @@ name: Deploy Streamlit App
 on:
   push:
     branches:
-      - main  # Change 'main' to your main branch name if it's different
+      - main  
 
 jobs:
   build:
