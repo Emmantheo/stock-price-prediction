@@ -48,7 +48,6 @@ catalog = DataCatalog.from_config(config, conf_catalog)
 
 
 #cache function that loads in data
-@st.cache(allow_output_mutation = True)
 def load_data(data_name):
     data = catalog.load(data_name)
     #can add extra stuff here
@@ -62,14 +61,12 @@ data = load_data("train_data")
 data_load_state.text("")
 
 #load in regression model
-@st.cache(allow_output_mutation=True)
 def load_regressor():
     return catalog.load("reg_model")
 
 regressor = load_regressor()
 
 
-@st.cache(allow_output_mutation=True)
 def main():
 
     st.title('Stock Price Prediction App')
