@@ -23,6 +23,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r src/requirements.txt  
 
-      - name: Run Streamlit app
+      - name: Deploy Streamlit app
         run: |
-          streamlit run app.py
+          mkdir -p ~/.streamlit
+          echo "\
+          [server]\n\
+          port = $PORT\n\
+          enableCORS = false\n\
+          " > ~/.streamlit/config.toml
+          streamlit run app.py &>/dev/null &  # Replace with the path to your Streamlit app file
