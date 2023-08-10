@@ -25,10 +25,4 @@ jobs:
 
       - name: Deploy Streamlit app
         run: |
-          mkdir -p ~/.streamlit
-          echo "\
-          [server]\n\
-          port = $PORT\n\
-          enableCORS = false\n\
-          " > ~/.streamlit/config.toml
-          streamlit run app.py &>/dev/null &  # Replace with the path to your Streamlit app file
+          streamlit run app.py &>/dev/null &  
