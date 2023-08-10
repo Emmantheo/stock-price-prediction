@@ -3,9 +3,6 @@ import plotly.express as px
 import numpy as np 
 import pandas as pd
 import time
-import matplotlib.pyplot as plt
-import seaborn as sns
-import altair as alt
 from kedro.config import ConfigLoader
 from kedro.framework.project import settings
 import logging.config
@@ -51,7 +48,7 @@ catalog = DataCatalog.from_config(config, conf_catalog)
 
 
 #cache function that loads in data
-#@st.cache(allow_output_mutation = True)
+@st.cache(allow_output_mutation = True)
 def load_data(data_name):
     data = catalog.load(data_name)
     #can add extra stuff here
@@ -65,9 +62,14 @@ data = load_data("train_data")
 data_load_state.text("")
 
 #load in regression model
-regressor = catalog.load("reg_model")
+@st.cache(allow_output_mutation=True)
+def load_regressor():
+    return catalog.load("reg_model")
+
+regressor = load_regressor()
 
 
+@st.cache(allow_output_mutation=True)
 def main():
 
     st.title('Stock Price Prediction App')
@@ -76,7 +78,7 @@ def main():
     #date = st.sidebar.date_input('Select Date', pd.Timestamp.now())
     image1_url = 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/UNIQLO_logo.svg/306px-UNIQLO_logo.svg.png?20110923051949'
     # Display the Uniqlo logo in the sidebar
-    st.sidebar.image(image1_url, use_column_width=True)
+    st.sidebar.image(image1_url, use_column_width=True, output_format="PNG")
 
     
     st.write('Enter the stock data:')
