@@ -36,6 +36,13 @@ The following image shows how the predicted price compares to the real price. Th
 
 ## Challenges
 1. Limited amount of data to train on which resulted in having a smaller size of test data.
+2. Installation of packages such as the fbprophet package. I had to install all the dependencies one after the other. Dependencies such as:
+    pystan
+    holidays
+    convertdate
+    lunarcalendar
+    cmdstanpy
+
 
 ## Usage
 To use this project, follow these steps:
