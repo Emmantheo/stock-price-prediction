@@ -1,5 +1,5 @@
 black~=22.0
-xgboost
+xgboost==1.4.2
 flake8>=3.7.9, <5.0
 ipython>=7.31.1, <8.0; python_version < '3.10.9'
 ipython~=8.10; python_version >= '3.10.9'
@@ -16,27 +16,27 @@ pytest~=7.2
 matplotlib~=3.4
 ipywidgets>=7, <8
 pandas>=1.2.0
-kedro-viz
-kedro-docker
-numpy
-pillow
-future
-gensim
-joblib
-numexpr
-scikit-learn
-scipy
+#kedro-viz
+#kedro-docker
+numpy==1.21.2
+pillow==8.4.0
+future==0.18.2
+gensim==4.1.2
+joblib==1.1.0
+numexpr==2.7.3
+scikit-learn==0.24.2
+scipy==1.7.3
 psycopg2-binary==2.9.6
 #psycopg2
 cached-path==1.1.2
-snscrape
-streamlit
-transformers
-seaborn
-altair
-streamlit_folium
-geopy
-folium
-streamlit_option_menu
-gunicorn
-Flask
+#snscrape
+streamlit==1.10.0
+#transformers==4.11.3
+seaborn==0.11.2
+altair==4.1.0
+streamlit_folium==0.4.0
+geopy==2.2.0
+folium==0.12.1
+streamlit_option_menu==0.1.0
+gunicorn==20.1.0
+Flask==2.1.0
