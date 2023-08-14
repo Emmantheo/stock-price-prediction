@@ -27,7 +27,7 @@ Linear Regression: A basic regression model that establishes a linear relationsh
 
 Random Forest: A powerful ensemble learning method that combines multiple decision trees to generate predictions.
 
-Long Short-Term Memory (LSTM): A recurrent neural network (RNN) architecture commonly used for sequential data analysis, such as time series data.
+xgboost: XGBoost's combination of boosting, regularization, and efficient optimization techniques makes it a go-to algorithm for many machine learning time series analysis projects and other real-world supervised learning projects due to its strong predictive performance and versatility.
 
 ## Result
 The following image shows how the predicted price compares to the real price. The image shows the model was able to predict the prices closely to the actual real prices.
