@@ -8,9 +8,10 @@ This project aims to predict stock prices of a single company, Uniqlo listed in 
   
   3. [Models](#models)
   4. [Result](#results)
-  5. [Usage](#usage)
-  6. [Contributing](#contributing)
-  7. [License](#license)
+  5. [Challenges](#challenges)
+  6. [Usage](#usage)
+  7. [Contributing](#contributing)
+  8. [License](#license)
 
 
 ## Introduction
@@ -26,12 +27,26 @@ Linear Regression: A basic regression model that establishes a linear relationsh
 
 Random Forest: A powerful ensemble learning method that combines multiple decision trees to generate predictions.
 
-Long Short-Term Memory (LSTM): A recurrent neural network (RNN) architecture commonly used for sequential data analysis, such as time series data.
+xgboost: XGBoost's combination of boosting, regularization, and efficient optimization techniques makes it a go-to algorithm for many machine learning time series analysis projects and other real-world supervised learning projects due to its strong predictive performance and versatility.
 
 ## Result
 The following image shows how the predicted price compares to the real price. The image shows the model was able to predict the prices closely to the actual real prices.
 
 <img width="655" alt="result_stock" src="https://github.com/Emmantheo/stock-price-prediction/assets/89465917/6330edc4-185d-4b05-bc17-d3670ec254bd">
+
+## Challenges
+1. Limited amount of data to train on which resulted in having a smaller size of test data.
+2. Installation of packages such as the fbprophet package. I had to install all the dependencies one after the other. Dependencies such as:
+    pystan
+   
+    holidays
+   
+    convertdate
+   
+    lunarcalendar
+   
+    cmdstanpy
+
 
 ## Usage
 To use this project, follow these steps:
