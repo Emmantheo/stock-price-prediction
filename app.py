@@ -9,7 +9,8 @@ import logging.config
 from kedro.framework.context import KedroContext
 import requests
 from PIL import Image
-
+from plotly import graph_objs as go
+#from fbprophet.plot import plot_plotly
 
 from kedro.io import DataCatalog
 import yaml
@@ -76,6 +77,18 @@ def main():
     image1_url = 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/UNIQLO_logo.svg/306px-UNIQLO_logo.svg.png?20110923051949'
     # Display the Uniqlo logo in the sidebar
     st.sidebar.image(image1_url, use_column_width=True, output_format="PNG")
+
+    # Plotting the raw data the model was trained on
+    def plot_raw_data():
+        fig = go.Figure()
+        fig.add_trace(go.Scatter(x=data['Date'], y=data['Open'], 
+                                 name="stock_open", line=dict(color='red')))
+        fig.add_trace(go.Scatter(x=data['Date'], y=data['Close'], name="stock_close"))
+        fig.layout.update(title_text='Time Series data with slider bar', title_x=0.3, 
+                          xaxis_rangeslider_visible=True)
+        st.plotly_chart(fig)
+        
+    plot_raw_data()
 
     
     st.write('Enter the stock data:')
