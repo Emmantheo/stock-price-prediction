@@ -27,16 +27,16 @@ from kedro.extras.datasets.pickle import PickleDataSet
 config = {
     "train_data": {
         "type": "pandas.CSVDataSet",
-        "filepath": "C:/Users/emmau/Downloads/stock-price-prediction/stock-price-prediction/data/01_raw/train.csv"
+        "filepath": "data/01_raw/train.csv"
     },
     "reg_model": {
         "type": "pickle.PickleDataSet",
-        "filepath": "C:/Users/emmau/Downloads/stock-price-prediction/stock-price-prediction/data/06_models/reg_model.pickle",
+        "filepath": "data/06_models/reg_model.pickle",
         "backend": "pickle"
     },
     "predictions": {
         "type": "pandas.CSVDataSet",
-        "filepath": "C:/Users/emmau/Downloads/stock-price-prediction/stock-price-prediction/data/07_model_output/predictions.csv"
+        "filepath": "data/07_model_output/predictions.csv"
     },
 }
 
