@@ -1,0 +1,22 @@
+black~=22.0
+flake8>=3.7.9, <5.0
+ipython>=7.31.1, <8.0; python_version < '3.8'
+ipython~=8.10; python_version >= '3.8'
+isort~=5.0
+jupyter~=1.0
+jupyterlab_server>=2.11.1, <2.16.0
+jupyterlab~=3.0, <3.6.0
+kedro~=0.18.5
+kedro-telemetry~=0.2.0
+nbstripout~=0.4
+pytest-cov~=3.0
+pytest-mock>=1.7.1, <2.0
+pytest~=7.2
+matplotlib~=3.4
+ipywidgets>=7, <8
+pandas>=1.2.0
+streamlit>=1.13.0
+#transformers==4.11.3
+seaborn==0.11.2
+altair==4.1.0
+Flask==2.1.0
