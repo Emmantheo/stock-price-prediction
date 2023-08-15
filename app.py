@@ -15,14 +15,14 @@ from plotly import graph_objs as go
 from kedro.io import DataCatalog
 import yaml
 
-from kedro.extras.datasets.pickle import PickleDataSet
+#from kedro.extras.datasets.pickle import PickleDataSet
 
-from kedro.extras.datasets.pandas import (
-    CSVDataSet,
-    SQLTableDataSet,
-    SQLQueryDataSet,
-    ParquetDataSet,
-)
+#from kedro.extras.datasets.pandas import (
+    #CSVDataSet,
+    #SQLTableDataSet,
+    #SQLQueryDataSet,
+    #ParquetDataSet,
+#)
 
 config = {
     "train_data": {
