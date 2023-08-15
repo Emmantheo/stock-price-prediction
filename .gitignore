@@ -2,20 +2,20 @@
 # KEDRO PROJECT
 
 # ignore all local configuration
-conf/local/**
-!conf/local/.gitkeep
-.telemetry
+#conf/local/**
+#!conf/local/.gitkeep
+#.telemetry
 
 # ignore potentially sensitive credentials files
 conf/**/*credentials*
 
 # ignore everything in the following folders
 #data/**
-logs/**
+#logs/**
 
 # except their sub-folders
-!data/**/
-!logs/**/
+#!data/**/
+#!logs/**/
 
 # also keep all .gitkeep files
 !.gitkeep
