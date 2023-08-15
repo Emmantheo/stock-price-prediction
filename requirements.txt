@@ -1,5 +1,5 @@
 black~=22.0
-xgboost==1.4.2
+xgboost==1.7.6
 flake8>=3.7.9, <5.0
 ipython>=7.31.1, <8.0; python_version < '3.8'
 ipython~=8.10; python_version >= '3.8'
