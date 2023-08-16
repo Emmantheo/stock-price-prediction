@@ -31,6 +31,7 @@ xgboost: XGBoost's combination of boosting, regularization, and efficient optimi
 
 ## Result
 Link to the deployed app: https://stock-price-predict-fsmqhpvkyc4mek2unbflob.streamlit.app/
+
 P.S: The app is still being worked on.
 The following image shows how the predicted price compares to the real price. The image shows the model was able to predict the prices closely to the actual real prices.
 
