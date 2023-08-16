@@ -39,6 +39,7 @@ The following image shows how the predicted price compares to the real price. Th
 Link to the deployed app: https://stock-price-predict-fsmqhpvkyc4mek2unbflob.streamlit.app/
 
 P.S: The app is still being worked on.
+
 https://github.com/Emmantheo/stock-price-prediction/assets/89465917/1d93b0bf-aae1-4d5a-8c7a-3a98ac6f3f27
 
 
